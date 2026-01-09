@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="{% static 'summary/css/style.css' %}">
+</head>
+<body>
+
+{% if page != 'home' and page != 'profile' %}
+  <h1>Portfolio</h1>
+{% endif %}
+
+
+{% if page == 'sign_in' %}
+<div id='sign_in' class='page'>
+  {% if msg %}
+    <p class='error'>{{ msg }}</p>
+  {% endif %}
+
+  <form method="POST" action="/sign_in/">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username" autocomplete="username" required>
+    <button type="submit">Sign In</button>
+  </form>
+</div>
+{% endif %}
+
+{% if page == 'home' %}
+<div id="home" class="page">
+  <h2>Introduction</h2>
+    <p class="home-msg">{{ msg|linebreaksbr }}</p>
+    <p class="text">Click on the given link to view my Profile</p>
+    <a href="https://drive.google.com/file/d/1ixpA-Mu69C4SkSaEV53jgODz_sqwFapR/view?usp=sharing" target="_blank"
+       class="profile-link">
+        https://drive.google.com/file/d/1ixpA-Mu69C4SkSaEV53jgODz_sqwFapR/view?usp=sharing
+    </a>
+
+    <a href="/signout/" class="sbutton">Sign Out</a>
+  </div>
+{% endif %}
+
+
+</html>
+</body>

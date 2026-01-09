@@ -1,0 +1,71 @@
+body{
+  font-family: Arial, sans-serif;
+  background: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 70px;
+  color: white;
+}
+
+#sign_in input[type='text']{
+  width: 180px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 35px;
+}
+
+#sign_in button{
+  width: 100px;
+  height: 25px;
+  margin-top: 5px;
+  border: none;
+}
+
+h2{
+  position: absolute;
+  width: 300px;
+  color: white;
+  font-size: 35px;
+  top: 40px;
+  left: 39%;
+  pointer-events: none;
+}
+
+.home-msg {
+  color: white;
+  font-size: 18px;
+  line-height: 2.8;
+  margin-top: 0px;
+}
+
+.text{
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+  margin-top: 150px;
+}
+
+.profile-link{
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sbutton{
+  text-align: left;
+  margin-right: -1000px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}

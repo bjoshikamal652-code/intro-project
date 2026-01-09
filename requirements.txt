@@ -1,0 +1,10 @@
+Django>=5.0
+gunicorn
+psycopg2-binary
+sqlparse
+asgiref
+tzdata
+whitenoise
+django-crispy-forms
+python-dotenv
+
