@@ -28,6 +28,7 @@
 {% endif %}
 
 {% if page == 'home' %}
+  {% csrf_token %}
 <div id="home" class="page">
   <h2>Introduction</h2>
     <p class="home-msg">{{ msg|linebreaksbr }}</p>
